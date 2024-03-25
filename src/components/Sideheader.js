@@ -19,11 +19,6 @@ const CATEGORIES = gql`
 `
 
 const Sideheader = () => {
-  const [open, setOpen] = useState(false)
-  function menuhandle() {
-    setOpen(true)
-    console.log(open)
-  }
   const { loading, error, data } = useQuery(CATEGORIES)
 
   if (loading) return <p>Loading.... </p>
@@ -36,20 +31,7 @@ const Sideheader = () => {
         className='justify-content-end'
         id='responsive-navbar-nav'
       >
-        <GiHamburgerMenu
-          class='menu-mobile'
-          onClick={
-            menuhandle ? (
-              <div
-                style={{
-                  width: '200px',
-                  height: '200px',
-                  backgroundColor: 'red',
-                }}
-              ></div>
-            ) : null
-          }
-        />
+        <GiHamburgerMenu class='menu-mobile' />
 
         <Nav>
           {data.categories.data.map((item) => (
