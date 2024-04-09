@@ -25,7 +25,9 @@ const Sideheader = () => {
   if (error) return <p>Error....</p>
   return (
     <Navbar className='py:3 ' sticky='top' collapseOnSelect='lg'>
-      <Navbar.Brand href='/'>React Bootstrap</Navbar.Brand>
+      <Navbar.Brand href='/'>
+        <h1 className='logo'>doctorbynature</h1>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls='responsive-navbar-nav'></Navbar.Toggle>
       <Navbar.Collapse
         className='justify-content-end'

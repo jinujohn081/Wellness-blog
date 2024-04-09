@@ -9,9 +9,9 @@ const HeroSection = () => {
           <div className='jumbotron jumbotron-fluid'>
             <h1 className='display-4'>
               <span className='bg-tertiary-color text-primary-color'>
-                Front-end
+                Health
               </span>{' '}
-              <span className='text-tertiary-color'> Developer</span>
+              <span className='text-tertiary-color'> and happiness</span>
             </h1>
             <p className='lead'>
               This is a simple hero unit, a simple jumbotron-style component for

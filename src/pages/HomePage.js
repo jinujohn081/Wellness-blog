@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 import { useQuery, gql } from '@apollo/client'
 import { Row, Container } from 'react-bootstrap'
 import HeroSection from './components/HeroSection'
@@ -41,7 +41,7 @@ const HomePage = () => {
 
   if (loading) return <div>Loading...</div>
   if (error) return <div>Error</div>
-  console.log(data)
+
   return (
     <>
       <Container>

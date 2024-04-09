@@ -136,6 +136,9 @@ span a:not(:first-child) .badge {
 .card-img:hover ~ .card-text {
   display: none;
 }
+.logo {
+  color: green;
+}
 .menu-mobile {
   display: none;
 }
